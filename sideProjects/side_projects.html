@@ -83,7 +83,7 @@ body, html {
   background-color: #010363;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
+  box-shadow: 5px 5px #999;
 }
 
 .MyButton:hover {background-color: #424949}
@@ -111,7 +111,7 @@ h3 {
 
 
 .main {
-  height: 750px; /* Used in this example to enable scrolling */
+  height: 100%; 
 }
 
 
@@ -128,10 +128,10 @@ h3 {
 
 <div class="main">
   <div class="bgimg-1">
-      <div id="Bkg" name="Bkg" style="text-align:center;margin:auto;">
+      <div id="Bkg" name="Bkg" style="text-align:center;margin:auto;overflow:visible;">
        <form>
-          <input class="MyButton" type="button" value="Udemy Projects" onclick="window.location.href='Udemy/udemy_projects.html'" />
-          <input class="MyButton" type="button" value="Coursera Projects" onclick="window.location.href='Coursera/coursera_projects.html'" />
+          <div style="position:absolute;margin-left:-245px;margin-top:-2%"><input class="MyButton" type="button" value="Udemy Projects" onclick="window.location.href='Udemy/udemy_projects.html'" /></div>
+          <div style="position:absolute;margin-left:15px;margin-top:-2%"><input class="MyButton" type="button" value="Coursera Projects" onclick="window.location.href='Coursera/coursera_projects.html'" /></div>
        </form>
     
   
