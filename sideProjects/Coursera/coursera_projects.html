@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Niramit' rel='stylesheet'>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 18px/1.8 "Niramit", sans-serif;
+    color: #777;
+}
+
+.bgimg-1 {
+  position: relative;
+  opacity: 0.85;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url("../../img/DS2.jpeg");
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 18px;
+  background-color: white;
+  opacity: 0.75;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.navbar {
+  overflow: visible;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #117864;
+}
+
+.MyButton {
+display: block;
+padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #117864;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.MyButton:hover {background-color: #424949}
+
+.MyButton:active {
+  background-color: #424949;
+  transform: translateY(1px);
+}
+
+.footer{
+  background-color: #333;
+  position: fixed;
+  bottom:0px;
+  width: 100%;
+  color: white;
+}
+
+
+h3 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font: 20px "Niramit", sans-serif;
+  font-weight: bold;
+  color: #111;
+}
+
+
+.main {
+  height: 750px; /* Used in this example to enable scrolling */
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1 {
+        background-attachment: scroll;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="main">
+  <div class="bgimg-1">
+      <div id="Bkg" name="Bkg" style="text-align:center;margin:auto;">
+       <form>
+         <input class="MyButton" type="button" style="width:100%"
+  value="Getting and Cleaning Data Course Project" onclick="window.location.href='https://github.com/tvarol/ProgrammingAssignment4'"/> 
+         <input class="MyButton" type="button" style="width:100%" value="Exploratory Data Analysis Course Project 1" onclick="window.location.href='https://github.com/tvarol/ExData_Plotting1'"/>
+	<input class="MyButton" type="button" style="width:100%"
+  value="Exploratory Data Analysis Course Project 2" onclick="window.location.href='https://github.com/tvarol/ExploratoryDataAnalysis_Week4'"/>
+	<input class="MyButton" type="button" style="width:100%" value="Reproducible Research Course Project 1" onclick="window.location.href='https://github.com/tvarol/RepData_PeerAssessment1'"/> 
+        <input class="MyButton" type="button" style="width:100%"
+  value="Reproducible Research Course Project 2" onclick="window.location.href='http://rpubs.com/tvarol/316544'"/>
+	<input class="MyButton" style="width:100%" type="button" value="Statistical
+  Inference Course Project Part 1" onclick="window.location.href='https://s3.amazonaws.com/coursera-uploads/peer-review/6850e756d8021fb178907b95c259b034/Statistical_inference_p1.pdf'"/>
+        <input class="MyButton" type="button" style="width:100%"
+  value="Statistical Inference Course Project Part 2" onclick="window.location.href='https://s3.amazonaws.com/coursera-uploads/peer-review/3238353b4afe3c5bcff4d4b0f1d5d351/Statistical_inference_p2.pdf'"/> 
+       </form>  
+    </div>
+    </div>
+</div>
+
+<div class="navbar">
+  <a href="https://tvarol.github.io/index.html"><i class="fa fa-home"></i>&nbsp;Home</a>
+  <a href="https://github.com/tvarol"><i class="fa fa-github"></i>&nbsp;My GitHub Profile</a>
+  <a href="https://linkedin.com/in/tvarol"><i class="fa fa-linkedin"></i>&nbsp;My LinkedIn Profile</a>
+  <a href="https://tvarol.github.io/CV_TulinVarolMete.pdf"><i class="fa fa-file-pdf-o"></i>&nbsp;My CV</a>
+  <a href="https://tvarol.github.io/sideProjects/side_projects.html"><i class="fa fa-flask"></i>&nbsp;Side Projects</a>
+  <a href="mailto:tulinvarol@gmail.com"><i class="fa fa-envelope-o"></i>&nbsp;Contact Me</a>
+</div>
+
+<div class="footer">
+  Copyright <i class="fa fa-copyright"></i>Tulin Mete, 2018. All rights reserved.
+</div>
