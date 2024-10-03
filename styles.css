@@ -1,0 +1,166 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 18px/1.8 "Niramit", sans-serif;
+  color: #777;
+}
+
+
+.bgimg-1, .bgimg-2 {
+  position: relative;
+  opacity: 0.95;
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("img/lhc_copy.jpg");
+  min-height: 60%;
+}
+
+.bgimg-2 {
+  background-image: url("img/bottomImage.jpg");
+  min-height: 50%;
+}
+
+.bgimg-3, .bgimg-4 {
+  position: relative;
+  opacity: 0.85;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-3 {
+  background-image: url("img/DS5.jpg");
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.bgimg-4 {
+  background-image: url("img/DS2.jpeg");
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); 
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.navbar {
+  overflow: visible;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.dropdown {
+  float: left;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: #f2f2f2;
+  padding: 19px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn{
+  background-color: #760A4C;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #333;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.MyButton {
+  display: block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #34C7FB;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 5px 5px #999;
+}
+
+.MyButton:hover {background-color: #424949}
+
+.MyButton:active {
+  background-color: #424949;
+  transform: translateY(1px);
+}
+
+.footer{
+  background-color: #333;
+  position: fixed;
+  bottom:0px;
+  width: 100%;
+  color: white;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 18px "Niramit", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
