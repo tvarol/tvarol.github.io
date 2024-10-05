@@ -25,7 +25,7 @@ body, html {
   min-height: 50%;
 }
 
-.bgimg-3, .bgimg-4 {
+.bgimg-3, .bgimg-4, .bgimg-5 {
   position: relative;
   opacity: 0.85;
   background-attachment: fixed;
@@ -45,6 +45,14 @@ body, html {
   background-image: url("img/DS2.jpeg");
   min-height: 100%;
   display: flex;
+  align-items: center;
+}
+
+.bgimg-5 {
+  background-image: url("img/DS6.jpg");
+  min-height: 100%;
+  display: flex;
+  
   align-items: center;
 }
 
